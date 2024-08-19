@@ -58,7 +58,7 @@ else:
     fsub_id = int(fsub_id)
 
 
-mongo_url = os.environ.get('MONGO_URL', 'mongodb+srv://hegodal811:rsRu17pspZAcp6V7@cluster0.prsvqax.mongodb.net/?retryWrites=true&w=majority')
+mongo_url = os.environ.get('MONGO_URL', 'mongodb+srv://sujanch9993:sujanch9993@cluster0.yhmdrl9.mongodb.net/?retryWrites=true&w=majority')
 client = MongoClient(mongo_url)
 db = client['cphdlust']
 users_collection = db['users']

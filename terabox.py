@@ -139,7 +139,7 @@ async def start_command(client, message):
             logging.error(f"Failed to add user {user_id} to the database: {e}")
 
     # Send sticker and delete it after 2 seconds
-    sticker_message = await message.reply_sticker("CAACAgUAAxkBAAJgv2Z6WDZMA7DVe4Xt2iwIkepCqL5XAALTCgACTEYQVr4X28SRTmMcNQQ")
+    sticker_message = await message.reply_sticker("CAACAgUAAxkBAAEJD_JmwtztngmWcKhqc4aqSfE3VvFgQQACJwEAAsiUZBTiPWKAkUSmmh4E")
     await asyncio.sleep(1.8)
     await sticker_message.delete()
 
@@ -188,7 +188,7 @@ async def start_command(client, message):
                 "This is an ads token. If you pass 1 ad, you can use the bot for 12 hours after passing the ad.\n\n"
             )
             token_button = InlineKeyboardButton("Get Token", url=link)
-            tutorial_button = InlineKeyboardButton("How to Verify", url="https://t.me/ultroid_official/18")
+            tutorial_button = InlineKeyboardButton("How to Verify", url="https://t.me/How_To_Verify_Bot/212")
             reply_markup = InlineKeyboardMarkup([[token_button], [tutorial_button]])
             await message.reply_text(message_text, reply_markup=reply_markup)
         else:
